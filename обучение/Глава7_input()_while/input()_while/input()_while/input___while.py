@@ -21,5 +21,3 @@ if int(number) % 10 == 0:
 else:
     print(f'\t{number} is not multiply 10')
 
-#7.4 while
-print('hello!')
