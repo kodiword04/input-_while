@@ -20,3 +20,5 @@ if int(number) % 10 == 0:
     print(f'\t{number} is multiply 10: ')
 else:
     print(f'\t{number} is not multiply 10')
+
+#7.4 while
