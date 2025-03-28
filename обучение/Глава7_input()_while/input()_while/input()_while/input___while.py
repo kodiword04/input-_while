@@ -14,11 +14,22 @@ print('\n#7.2')
    # print('You are welcome!')
 
 #7.3 input() � int()
-print('\n#7.3')
-number = input('Tell me a number and I tell you is it multiply 10 or not\n')
-if int(number) % 10 == 0:
-    print(f'\t{number} is multiply 10: ')
-else:
-    print(f'\t{number} is not multiply 10')
+#print('\n#7.3')
+#number = input('Tell me a number and I tell you is it multiply 10 or not\n')
+#if int(number) % 10 == 0:
+    #print(f'\t{number} is multiply 10: ')
+#else:
+    #print(f'\t{number} is not multiply 10')
 
 #7.4 while
+print('\n#7.4')
+message = 'Hello! Please enter topping for your pizza.\nIf you are done, enter "quit": '
+
+active = True
+while active:
+    topping = input(message)
+
+    if topping == 'quit':
+        break
+    else:
+        print(f'Added: {topping}')
