@@ -35,17 +35,22 @@
 #         print(f'Added: {topping}')
 
 #7.5 while()
-message = '\nTell your age and I tell you a ticket cost.\nIf you are done, enter "quit": '
+# message = '\nTell your age and I tell you a ticket cost.\nIf you are done, enter "quit": '
 
-active = True
-while active:
-    age = input(message)
-    if age == 'quit':
-        active = False
-    else:
-        if int(age) < 3:
-            print('Ticket cost 0')
-        elif int(age) < 12:
-            print('Ticket cost is 10 dollars')
-        else:
-            print('Ticket cost is 15 dollars')
+# active = True
+# while active:
+#     age = input(message)
+#     if age == 'quit':
+#         active = False
+#     else:
+#         if int(age) < 3:
+#             print('Ticket cost 0')
+#         elif int(age) < 12:
+#             print('Ticket cost is 10 dollars')
+#         else:
+#             print('Ticket cost is 15 dollars')
+
+#7.7 бесконечный цикл для проверки
+x = 1
+while x<5:
+    print('ya lox')
