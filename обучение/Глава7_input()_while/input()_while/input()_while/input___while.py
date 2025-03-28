@@ -71,21 +71,38 @@
 # for finished_sandwich in finished_sandwiches:
 #     print(finished_sandwich.title())
 
-#7.9 удаление повторяющихся элементов списка с помощью while
-print('\n#7.9')
-sandwiches_orders = ['cheeseburger','pastrami',
-                     'vopper','pastrami',
-                    'grandcheese','angus burger',
-                    'pastrami']
+# #7.9 удаление повторяющихся элементов списка с помощью while
+# print('\n#7.9')
+# sandwiches_orders = ['cheeseburger','pastrami',
+#                      'vopper','pastrami',
+#                     'grandcheese','angus burger',
+#                     'pastrami']
 
-for sandwich_orders in sandwiches_orders:
-    print(sandwich_orders)
+# for sandwich_orders in sandwiches_orders:
+#     print(sandwich_orders)
 
-print('\nPastrami is over now!')
+# print('\nPastrami is over now!')
 
-while 'pastrami' in sandwiches_orders:
-    sandwiches_orders.remove('pastrami')
+# while 'pastrami' in sandwiches_orders:
+#     sandwiches_orders.remove('pastrami')
 
-print('')
-for sandwich_orders in sandwiches_orders:
-    print(sandwich_orders)
+# print('')
+# for sandwich_orders in sandwiches_orders:
+#     print(sandwich_orders)
+
+# #7.10 заполнение словаря данными, введенными пользователем с помощью while
+# print('\n#7.10')
+
+# answers = {}
+
+# active = True
+# while active:
+#     name = input("\n'What's your name? ")
+#     answer = input('Where do you want to spend the holidays? ')
+#     answers[name] = answer
+#     repeat = input('Are you a last one? ')
+#     if repeat == 'yes' or repeat == 'yeah' :
+#         active = False
+
+# for name,answer in answers.items():
+#     print(f'{name.title()} want to spend holidays: {answer.title()}')
