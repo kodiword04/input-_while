@@ -34,7 +34,8 @@
 #     else:
 #         print(f'Added: {topping}')
 
-#7.5 while()
+# #7.5 while()
+# print('\n#7.5')
 # message = '\nTell your age and I tell you a ticket cost.\nIf you are done, enter "quit": '
 
 # active = True
@@ -50,7 +51,22 @@
 #         else:
 #             print('Ticket cost is 15 dollars')
 
-#7.7 бесконечный цикл для проверки
-x = 1
-while x<5:
-    print('ya lox')
+# #7.7 бесконечный цикл для проверки
+# print('\n#7.7')
+# x = 1
+# while x<5:
+#     print('ya lox')
+
+#7.8 добавление элементов списка в другой список с помощью while
+print('\n#7.8')
+sandwiches_orders = ['cheeseburger','vopper', 'grandcheese', 'angus burger']
+finished_sandwiches = []
+
+while sandwiches_orders:
+    sandwich = sandwiches_orders.pop()
+    print(f'{sandwich.title()} is done! ')
+    finished_sandwiches.append(sandwich)
+
+print(f'\nOrders are done: ')
+for finished_sandwich in finished_sandwiches:
+    print(finished_sandwich.title())
