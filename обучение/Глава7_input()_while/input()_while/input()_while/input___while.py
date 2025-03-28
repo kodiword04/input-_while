@@ -57,16 +57,35 @@
 # while x<5:
 #     print('ya lox')
 
-#7.8 добавление элементов списка в другой список с помощью while
-print('\n#7.8')
-sandwiches_orders = ['cheeseburger','vopper', 'grandcheese', 'angus burger']
-finished_sandwiches = []
+# #7.8 добавление элементов списка в другой список с помощью while
+# print('\n#7.8')
+# sandwiches_orders = ['cheeseburger','vopper', 'grandcheese', 'angus burger']
+# finished_sandwiches = []
 
-while sandwiches_orders:
-    sandwich = sandwiches_orders.pop()
-    print(f'{sandwich.title()} is done! ')
-    finished_sandwiches.append(sandwich)
+# while sandwiches_orders:
+#     sandwich = sandwiches_orders.pop()
+#     print(f'{sandwich.title()} is done! ')
+#     finished_sandwiches.append(sandwich)
 
-print(f'\nOrders are done: ')
-for finished_sandwich in finished_sandwiches:
-    print(finished_sandwich.title())
+# print(f'\nOrders are done: ')
+# for finished_sandwich in finished_sandwiches:
+#     print(finished_sandwich.title())
+
+#7.9 удаление повторяющихся элементов списка с помощью while
+print('\n#7.9')
+sandwiches_orders = ['cheeseburger','pastrami',
+                     'vopper','pastrami',
+                    'grandcheese','angus burger',
+                    'pastrami']
+
+for sandwich_orders in sandwiches_orders:
+    print(sandwich_orders)
+
+print('\nPastrami is over now!')
+
+while 'pastrami' in sandwiches_orders:
+    sandwiches_orders.remove('pastrami')
+
+print('')
+for sandwich_orders in sandwiches_orders:
+    print(sandwich_orders)
