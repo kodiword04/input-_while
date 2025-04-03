@@ -36,3 +36,13 @@ def make_shirt(size = 'L', text = 'I love Python'):
 
 make_shirt()
 make_shirt('4',text = 'I love C++')
+
+#8.5 все типы вызовов аргументов
+print('\n#8.5')
+
+def describe_city(city, country = 'russia'):
+    print(f'{city.title()} is {country.title()}')
+
+describe_city('spb')
+describe_city('new york', country = 'america')
+describe_city('paris', 'france')
