@@ -46,3 +46,17 @@ def describe_city(city, country = 'russia'):
 describe_city('spb')
 describe_city('new york', country = 'america')
 describe_city('paris', 'france')
+
+#8.6 возвращение значения в функции
+print('\n#8.6')
+
+def city_country(city,country):
+    full_location = f'{city.title()},{country.title()}'
+    return full_location
+
+location = city_country('spb', 'russia')
+print(location)
+location = city_country('new york', 'america')
+print(location)
+location = city_country('paris', 'france')
+print(location)
