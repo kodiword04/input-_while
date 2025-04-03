@@ -60,3 +60,21 @@ location = city_country('new york', 'america')
 print(location)
 location = city_country('paris', 'france')
 print(location)
+
+#8.7 создание словаря в функции
+print('\n#8.7')
+
+def musician_album(name_author, name_song, date_published = None):
+    album = {'author': name_author, 'song': name_song}
+    if date_published:
+        album['published'] = date_published
+    return album
+
+album = musician_album('choy','star which name is sun')
+print(album)
+album = musician_album('poshlay_molly','non-stop')
+print(album)
+album = musician_album('mumi troll','vladivostok 2000')
+print(album)
+album = musician_album('instasamka','titanic', date_published = 2024)
+print(album)
