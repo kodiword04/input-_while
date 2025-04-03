@@ -1,4 +1,4 @@
-#8.1 создание и вывод функции
+#8.1 пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅ пїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅ
 print('\n#8.1')
 
 def display_message(message):
@@ -7,11 +7,24 @@ def display_message(message):
 message = '8.1 is about functions!'
 display_message(message)
 
-#8.2 передача параметра функции
+#8.2 пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅ
 print('\n#8.2')
 
 def favorite_book(title):
     print(f'One of my favorite book is {title.title()}')
 
-title = input('What is you favorite book? ')
+title ='harry potter'
 favorite_book(title)
+
+#8.3 РїРѕР·РёС†РёРѕРЅРЅС‹Рµ Р°СЂРіСѓРјРµРЅС‚С‹ Рё РёРјРµРЅРѕРІР°РЅРЅС‹Рµ 
+print('\n#8.3')
+
+def make_shirt1(size, text):
+    print(f'Size:{size}\nText: {text}')
+
+def make_shirt2(size, text):
+    print(f'Size:{size}\nText: {text}')
+
+make_shirt1('3','I love animmals')
+make_shirt2(size = '4', text = 'I am Sasha')
+
