@@ -28,3 +28,11 @@ def make_shirt2(size, text):
 make_shirt1('3','I love animmals')
 make_shirt2(size = '4', text = 'I am Sasha')
 
+#8.4 аргументы по умолчанию 
+print('\n#8.4')
+
+def make_shirt(size = 'L', text = 'I love Python'):
+    print(f'Size:{size}\nText: {text}')
+
+make_shirt()
+make_shirt('4',text = 'I love C++')
