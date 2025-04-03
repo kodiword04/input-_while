@@ -78,3 +78,17 @@ album = musician_album('mumi troll','vladivostok 2000')
 print(album)
 album = musician_album('instasamka','titanic', date_published = 2024)
 print(album)
+
+#8.8 работа с while и функцией
+print('\n#8.8')
+name_author = ''
+
+while True:
+    print('\nTell me author and song, please.\nIf you want to stop enter: "q"')
+    name_author = input('Author: ')
+    if name_author != 'q':
+        name_song = input('Song: ')
+        print(musician_album(name_author, name_song))
+    else:
+        break
+
