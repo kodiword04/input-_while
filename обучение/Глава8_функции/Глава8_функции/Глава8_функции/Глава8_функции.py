@@ -103,24 +103,8 @@ messages = ['I am Sasha', 'I study in Politech', 'My wife is Zlata']
 
 show_messages(messages)
 
-# #8.10 изменение элементов списка через функцию
-# print(f'\n#8.10')
-
-# def send_messages(messages, sent_messages):
-#     while messages:
-#         sent_message = messages.pop(0)
-#         print(f'Sent: {sent_message}')
-#         sent_messages.append(sent_message)
-
-# sent_messages = []
-
-# send_messages(messages, sent_messages)
-
-# print(messages)
-# print(sent_messages)
-
-#8.11 запрет на изменение элементов списка через функцию
-print(f'\n#8.11')
+#8.10 изменение элементов списка через функцию
+print(f'\n#8.10')
 
 def send_messages(messages, sent_messages):
     while messages:
@@ -130,7 +114,7 @@ def send_messages(messages, sent_messages):
 
 sent_messages = []
 
-send_messages(messages[:], sent_messages)
+send_messages(messages, sent_messages)
 
 print(messages)
 print(sent_messages)
