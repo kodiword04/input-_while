@@ -79,16 +79,26 @@ print(album)
 album = musician_album('instasamka','titanic', date_published = 2024)
 print(album)
 
-#8.8 работа с while и функцией
-print('\n#8.8')
-name_author = ''
+# #8.8 работа с while и функцией
+# print('\n#8.8')
+# name_author = ''
 
-while True:
-    print('\nTell me author and song, please.\nIf you want to stop enter: "q"')
-    name_author = input('Author: ')
-    if name_author != 'q':
-        name_song = input('Song: ')
-        print(musician_album(name_author, name_song))
-    else:
-        break
+# while True:
+#     print('\nTell me author and song, please.\nIf you want to stop enter: "q"')
+#     name_author = input('Author: ')
+#     if name_author != 'q':
+#         name_song = input('Song: ')
+#         print(musician_album(name_author, name_song))
+#     else:
+#         break
 
+#8.9 список в функции 
+print(f'\n#8.9')
+
+def show_messages(messages):
+    for message in messages:
+        print('\t' + message)
+
+messages = ['I am Sasha', 'I study in Politech', 'My wife is Zlata']
+
+show_messages(messages)
