@@ -1,7 +1,6 @@
+from functions import send_messages as sm
+
 #8.1 �������� � ����� �������
-from http.client import CannotSendRequest
-
-
 print('\n#8.1')
 
 def display_message(message):
@@ -96,15 +95,15 @@ print(album)
 #         break
 
 #8.9 список в функции 
-print(f'\n#8.9')
+# print(f'\n#8.9')
 
-def show_messages(messages):
-    for message in messages:
-        print('\t' + message)
+# def show_messages(messages):
+#     for message in messages:
+#         print('\t' + message)
 
-messages = ['I am Sasha', 'I study in Politech', 'My wife is Zlata']
+# messages = ['I am Sasha', 'I study in Politech', 'My wife is Zlata']
 
-show_messages(messages)
+# show_messages(messages)
 
 # #8.10 изменение элементов списка через функцию
 # print(f'\n#8.10')
@@ -123,20 +122,20 @@ show_messages(messages)
 # print(sent_messages)
 
 #8.11 запрет на изменение элементов списка через функцию
-print(f'\n#8.11')
+# print(f'\n#8.11')
 
-def send_messages(messages, sent_messages):
-    while messages:
-        sent_message = messages.pop(0)
-        print(f'Sent: {sent_message}')
-        sent_messages.append(sent_message)
+# def send_messages(messages, sent_messages):
+#     while messages:
+#         sent_message = messages.pop(0)
+#         print(f'Sent: {sent_message}')
+#         sent_messages.append(sent_message)
 
-sent_messages = []
+# sent_messages = []
 
-send_messages(messages[:], sent_messages)
+# send_messages(messages[:], sent_messages)
 
-print(messages)
-print(sent_messages)
+# print(messages)
+# print(sent_messages)
 
 #8.12 передача любого кол-ва информации в функцию(список)
 print(f'\n#8.12')
@@ -173,3 +172,14 @@ def cars_info(mark, model, **cars):
 car = cars_info('subaru', 'outback', color='blue', tow_package=True)
 
 print(car)
+
+#8.14 использование модулей
+print(f'\n#8.14')
+
+messages = ['I am Sasha', 'I study in Politech', 'My wife is Zlata']
+sent_messages = []
+
+sm(messages, sent_messages)
+
+print(messages)
+print(sent_messages)
