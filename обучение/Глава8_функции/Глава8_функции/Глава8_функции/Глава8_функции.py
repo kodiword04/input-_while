@@ -134,3 +134,15 @@ send_messages(messages[:], sent_messages)
 
 print(messages)
 print(sent_messages)
+
+#8.12 передача любого кол-ва информации в функцию
+print(f'\n#8.12')
+
+def make_sandwiches(*components):
+    print('Make sandwich with: ')
+    for component in components:
+        print('\t' + component)
+
+make_sandwiches('cheese','bread','meat')
+make_sandwiches('spicy')
+make_sandwiches('ketchap','milk')
