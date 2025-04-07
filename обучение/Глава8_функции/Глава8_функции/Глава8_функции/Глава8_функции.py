@@ -1,4 +1,7 @@
 #8.1 �������� � ����� �������
+from http.client import CannotSendRequest
+
+
 print('\n#8.1')
 
 def display_message(message):
@@ -158,3 +161,15 @@ def build_profile(first, last, **facts):
 user_profile = build_profile('sasha','gafarov',location = 'spb', university = 'politech', wife = 'zlata')
 
 print(user_profile)
+
+#8.13 передача любого кол-ва информации в функцию(словарь)
+print(f'\n#8.13')
+
+def cars_info(mark, model, **cars):
+    cars['mark'] = mark
+    cars['model'] = model
+    return cars
+
+car = cars_info('subaru', 'outback', color='blue', tow_package=True)
+
+print(car)
