@@ -135,7 +135,7 @@ send_messages(messages[:], sent_messages)
 print(messages)
 print(sent_messages)
 
-#8.12 передача любого кол-ва информации в функцию
+#8.12 передача любого кол-ва информации в функцию(список)
 print(f'\n#8.12')
 
 def make_sandwiches(*components):
@@ -146,3 +146,15 @@ def make_sandwiches(*components):
 make_sandwiches('cheese','bread','meat')
 make_sandwiches('spicy')
 make_sandwiches('ketchap','milk')
+
+#8.12 передача любого кол-ва информации в функцию(словарь)
+print(f'\n#8.12')
+
+def build_profile(first, last, **facts):
+    facts['first_name'] = first
+    facts['last_name'] = last
+    return facts
+
+user_profile = build_profile('sasha','gafarov',location = 'spb', university = 'politech', wife = 'zlata')
+
+print(user_profile)
