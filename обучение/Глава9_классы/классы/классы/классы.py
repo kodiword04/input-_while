@@ -2,7 +2,7 @@
 print('#9.1')
 
 class Restaurant:
-    def __init__(self, restaurant_name, cuisine_type):
+    def __init__(self,restaurant_name,cuisine_type):
         self.name = restaurant_name
         self.type = cuisine_type
         self.number_served = 0
@@ -13,7 +13,7 @@ class Restaurant:
     def open_restaurant(self):
         print('The restaurant is open!')
     
-    def set_number_served(self, served):
+    def set_number_served(self,served):
         self.number_served = served
         print(f'Served clients: {self.number_served}')
     
@@ -46,6 +46,7 @@ class User:
         self.last = last_name
         self.location = location
         self.nickname = nickname
+        self.login_attempts = 0
 
     def describe_user(self):
         print(f"\n{self.first.title()} {self.last.title()}'s nickname is {self.nickname}")
@@ -53,6 +54,14 @@ class User:
 
     def greet_user(self):
         print(f"Hello, {self.nickname}!")
+
+    def increment_login_attempts(self):
+        self.login_attempts += 1
+        return self.login_attempts
+
+    def reset_login_attempts(self):
+        self.login_attempts = 0
+        print(f'Login attempts reset: {self.login_attempts}')
 
 
 user_0 = User('alex','gafarov','spb','kodiword')
@@ -67,7 +76,7 @@ user_2 = User('kirill','zooravlev','ufa','sprint')
 user_2.describe_user()
 user_2.greet_user()
 
-#9.4 изменение класса restaurant и добавление новых методов с изменением атрибутов
+#9.4 изменение класса  Restaurant и добавление новых методов с изменением атрибутов
 print('\n#9.4')
 
 my_restaurant = Restaurant('euroasia','asian')
@@ -79,3 +88,15 @@ print(my_restaurant.number_served)
 my_restaurant.set_number_served(500)
 
 my_restaurant.increment_number_served(30)
+
+#9.5 изменение класса User и добавление новых методов с изменением атрибутов
+print('\n#9.5')
+
+user_0 = User('alex','gafarov','spb','kodiword')
+user_0.describe_user()
+user_0.greet_user()
+attempts = user_0.increment_login_attempts()
+attempts = user_0.increment_login_attempts()
+attempts = user_0.increment_login_attempts()
+print(f'Login attempts now: {attempts}')
+user_0.reset_login_attempts()
