@@ -105,8 +105,8 @@ user_0.reset_login_attempts()
 print('\n#9.6')
 
 class IceCreamStand(Restaurant):
-    def __init__(self,restaurant_name):
-        super().__init__(restaurant_name)
+    def __init__(self,restaurant_name,cuisine_type):
+        super().__init__(restaurant_name,cuisine_type)
         self.flavors = ['vanila', 'stawberry','wildberry']
 
     def describe_flavors(self):
@@ -115,6 +115,25 @@ class IceCreamStand(Restaurant):
             print(f'\t{flavor.title()}')
 
 
-my_ice_cream = IceCreamStand('ice cream for everyone')
-my_ice_cream.describe_restaurant()
+my_ice_cream = IceCreamStand('ice cream for everyone','russian')
 my_ice_cream.describe_flavors()
+
+#9.7 наследование класса
+print('\n#9.7')
+
+class Admin(User):
+    def __init__(self,first_name,last_name,location,nickname):
+        super().__init__(first_name,last_name,location,nickname)
+        self.privileges = ['allow to add message', 'allow to del users', 'allow to ban users']
+
+    def show_privileges(self):
+        print(f"There are some admin's privileges: ")
+        for privilege in self.privileges:
+            print(f'\t{privilege.title()}')
+
+
+admin = Admin('radmir', 'razyapov', 'moscow', 'chempik')
+
+admin.describe_user()
+admin.greet_user()
+admin.show_privileges()
