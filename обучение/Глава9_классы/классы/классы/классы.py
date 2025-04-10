@@ -100,3 +100,21 @@ attempts = user_0.increment_login_attempts()
 attempts = user_0.increment_login_attempts()
 print(f'Login attempts now: {attempts}')
 user_0.reset_login_attempts()
+
+#9.6 наследование класса
+print('\n#9.6')
+
+class IceCreamStand(Restaurant):
+    def __init__(self,restaurant_name):
+        super().__init__(restaurant_name)
+        self.flavors = ['vanila', 'stawberry','wildberry']
+
+    def describe_flavors(self):
+        print(f'We have this flavors: ')
+        for flavor in self.flavors:
+            print(f'\t{flavor.title()}')
+
+
+my_ice_cream = IceCreamStand('ice cream for everyone')
+my_ice_cream.describe_restaurant()
+my_ice_cream.describe_flavors()
