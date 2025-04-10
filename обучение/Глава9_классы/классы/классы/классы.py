@@ -121,19 +121,32 @@ my_ice_cream.describe_flavors()
 #9.7 наследование класса
 print('\n#9.7')
 
-class Admin(User):
-    def __init__(self,first_name,last_name,location,nickname):
-        super().__init__(first_name,last_name,location,nickname)
-        self.privileges = ['allow to add message', 'allow to del users', 'allow to ban users']
+class Privileges():
+    def __init__(self):
+        self.list_privileges = ['allow to add message', 'allow to del users', 'allow to ban users']
 
     def show_privileges(self):
         print(f"There are some admin's privileges: ")
-        for privilege in self.privileges:
+        for privilege in self.list_privileges:
             print(f'\t{privilege.title()}')
+
+
+class Admin(User):
+    def __init__(self,first_name,last_name,location,nickname):
+        super().__init__(first_name,last_name,location,nickname)
+        self.privileges = Privileges()
 
 
 admin = Admin('radmir', 'razyapov', 'moscow', 'chempik')
 
-admin.describe_user()
-admin.greet_user()
-admin.show_privileges()
+#admin.describe_user()
+#admin.greet_user()
+#admin.show_privileges()
+
+#9.8 экземпл€р как класс
+print('\n#9.8')
+
+admin_1 = Admin('nikita', 'kird', 'sterlitamak', 'lil kird')
+admin_1.describe_user()
+admin_1.greet_user()
+admin_1.Privileges.show_privileges()
