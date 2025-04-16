@@ -207,13 +207,31 @@ while count <= 10:
 #9.14 импортирование модуля random с методом choice, который выбрает рандомный аргумент в списке
 print('\n#9.14')
 
-lotery = [1, 5, 12, 46, 234, 'f', 'q', 't', 'p', 'z']
+lotery = [1, 5, 12, 46, 234, 20, 123,2435, 1, 3, 'f', 'q', 't', 'p', 'z']
+win_position = []
+
+for a in range(4):  #choise a random arg from lotery and add to win_position
+    position = choice(lotery)
+    win_position.append(position)
+
+print(f'Here is win position of lotery {win_position}')
+
+#9.15 импортирование модуля random с методом choice, который выбрает рандомный аргумент в списке
+print('\n#9.14')
+
+my_ticket = [1, 'q', 234, 'p', 123, 2435, 1, 3, 12, 't', 20, 'z']
 win_position = []
 
 i = 0
-while i < 4: #choise a random arg from lotery and add to win_position
+time = 0
+while i < 12: # choise a random arg from lotery and check with my_ticket
+    time += 1
     position = choice(lotery)
-    win_position.append(position)
-    i += 1
+    if position == my_ticket[i]:
+        win_position.append(position)
+        i += 1
+    else:
+        continue
 
-print(f'Here is win position of lotery {win_position}')
+print(win_position)
+print(f'Time: {time}')
