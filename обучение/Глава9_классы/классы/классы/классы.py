@@ -2,6 +2,7 @@ from restaurant import Restaurant as R
 from user import User
 from admin import Admin
 from random import randint
+from random import choice
 
 #9.1 �������� ������ � ������������� �������
 print('#9.1')
@@ -202,3 +203,17 @@ print(f'\nDice = 20')
 while count <= 10:
     dice_20.roll_die()
     count += 1
+
+#9.14 импортирование модуля random с методом choice, который выбрает рандомный аргумент в списке
+print('\n#9.14')
+
+lotery = [1, 5, 12, 46, 234, 'f', 'q', 't', 'p', 'z']
+win_position = []
+
+i = 0
+while i < 4: #choise a random arg from lotery and add to win_position
+    position = choice(lotery)
+    win_position.append(position)
+    i += 1
+
+print(f'Here is win position of lotery {win_position}')
