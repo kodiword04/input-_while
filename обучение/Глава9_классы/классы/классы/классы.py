@@ -1,6 +1,7 @@
 from restaurant import Restaurant as R
 from user import User
 from admin import Admin
+from random import randint
 
 #9.1 �������� ������ � ������������� �������
 print('#9.1')
@@ -168,3 +169,36 @@ print('\n#9.11')
 admin = Admin('nikita', 'kird', 'sterlitamak', 'lil kird')
 admin.privileges.show_privileges()
 admin.describe_user()
+
+#9.13 импортирование модуля random с методом randint, который создает рандомное число
+print('\n#9.13')
+
+class Die:
+    '''создает кубик со стороной sides для броска'''
+    def __init__(self,sides=6):
+        self.sides = sides
+
+    def roll_die(self):
+        '''бросает кубик'''
+        print(f'Came up: {randint(1,self.sides)}')
+
+dice_6 = Die() #create dice with 6 sides
+count = 1
+print(f'\nDice = 6')
+while count <= 10:
+    dice_6.roll_die()
+    count += 1
+
+dice_10 = Die(10) #create dice with 10 sides
+count = 1
+print(f'\nDice = 10')
+while count <= 10:
+    dice_10.roll_die()
+    count += 1
+
+dice_20 = Die(20) #create dice with 20 sides
+count = 1
+print(f'\nDice = 20')
+while count <= 10:
+    dice_20.roll_die()
+    count += 1
