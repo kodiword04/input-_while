@@ -1,5 +1,6 @@
 from restaurant import Restaurant as R
-import user
+from user import User
+from admin import Admin
 
 #9.1 �������� ������ � ������������� �������
 print('#9.1')
@@ -160,3 +161,10 @@ print('\n#9.10')
 my_restaurant = R("sasha's relax", "russian")
 my_restaurant.describe_restaurant()
 my_restaurant.set_number_served(5)
+
+#9.11 создание и импортирование модуля user и admin
+print('\n#9.11')
+
+admin = Admin('nikita', 'kird', 'sterlitamak', 'lil kird')
+admin.privileges.show_privileges()
+admin.describe_user()
