@@ -162,7 +162,7 @@ my_restaurant = R("sasha's relax", "russian")
 my_restaurant.describe_restaurant()
 my_restaurant.set_number_served(5)
 
-#9.11 создание и импортирование модуля user и admin
+#9.11 и 9.12 создание и импортирование модуля user и admin
 print('\n#9.11')
 
 admin = Admin('nikita', 'kird', 'sterlitamak', 'lil kird')
