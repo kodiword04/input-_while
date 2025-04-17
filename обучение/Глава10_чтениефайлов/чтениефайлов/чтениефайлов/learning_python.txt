@@ -1,0 +1,5 @@
+In Python you can:
+sum numbers
+write srting
+and
+do whatever you want
