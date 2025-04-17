@@ -1,5 +1,3 @@
-In Python you can:
-sum numbers
-write srting
-and
-do whatever you want
+In Python you can sum numbers
+In Python you can write srting
+In Python you can do whatever you want
