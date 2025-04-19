@@ -29,10 +29,25 @@ with open(file) as file_object:
         print(line.rstrip())
 
 #10.3 запись информации в файл
-print('\n#10.3')
+# print('\n#10.3')
 
-filename  = 'guest.txt'
+# filename  = 'guest.txt'
 
-name  = input('What is your name: ')
-with open(filename, 'a') as file_object:
-    file_object.write(name.title() + '\n')
+# name  = input('What is your name: ')
+# with open(filename, 'a') as file_object:
+#     file_object.write(name.title() + '\n')
+
+#10.4 запись информации в файл с помощью цикла
+# print('\n#10.4')
+
+# filename  = 'guest_book.txt'
+
+# active = True
+# while active:
+#     name  = input('What is your name: ')
+#     if name != 'stop':
+#         with open(filename, 'a') as file_object:
+#             file_object.write(name.title() + '\n')
+#         print(f'Hello, {name.title()}')
+#     else:
+#         active = False
