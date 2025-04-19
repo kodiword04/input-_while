@@ -29,7 +29,7 @@ with open(file) as file_object:
         print(line.rstrip())
 
 #10.3 запись информации в файл
-# print('\n#10.3')
+print('\n#10.3')
 
 # filename  = 'guest.txt'
 
@@ -38,16 +38,29 @@ with open(file) as file_object:
 #     file_object.write(name.title() + '\n')
 
 #10.4 запись информации в файл с помощью цикла
-# print('\n#10.4')
+print('\n#10.4')
 
 # filename  = 'guest_book.txt'
 
 # active = True
 # while active:
-#     name  = input('What is your name: ')
+#     name  = input("Enter 'stop' if you want leave\nWhat is your name: ")
 #     if name != 'stop':
 #         with open(filename, 'a') as file_object:
 #             file_object.write(name.title() + '\n')
 #         print(f'Hello, {name.title()}')
+#     else:
+#         active = False
+
+#10.5 запись информации в файл с помощью цикла
+print('\n#10.5')
+# filename  = 'survey.txt'
+
+# active = True
+# while active:
+#     answer  = input("Enter 'stop' if you want leave\nWhy are you like to code: ")
+#     if answer != 'stop':
+#         with open(filename, 'a') as file_object:
+#             file_object.write(answer + '\n')
 #     else:
 #         active = False
