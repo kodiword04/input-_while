@@ -27,3 +27,12 @@ with open(file) as file_object:
     for line in file_object:
         line = line.replace('Python', 'C')
         print(line.rstrip())
+
+#10.3 запись информации в файл
+print('\n#10.3')
+
+filename  = 'guest.txt'
+
+name  = input('What is your name: ')
+with open(filename, 'a') as file_object:
+    file_object.write(name.title() + '\n')
